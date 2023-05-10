@@ -1,0 +1,12 @@
+
+body {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.days_container {
+    display: flex;
+}

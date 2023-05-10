@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching days</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script type="text/x-template" id="days_template">
+        {{#each different_days}}
+        <div class="day_box"><p class="day_text">{{day}}</p></div>
+        {{/each}}
+    </script>
+</head>
+<body>
+
+    <h1>Matching days</h1>
+    <section class="days_container">
+
+    </section>
+    <section class="date_input_container">
+        <div>
+
+            <label for="first_date">First Date :</label>
+            <input type="date" id="first_date" name="first_date" />
+        </div>
+        <div>
+
+            <label for="second_date">Second Date:</label>
+            <input type="date" id="second_date" name="second_date"/>
+        </div>
+    </section>
+
+    
+        <!-- matching-days function -->
+        <script src="/matching-days.js" charset="utf-8"></script>
+        <!-- followed by the tests -->
+        <script src="./matching-days-factory.js" charset="utf-8"></script>
+    
+</body>
+</html>

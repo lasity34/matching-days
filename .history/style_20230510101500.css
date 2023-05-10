@@ -1,0 +1,18 @@
+
+body {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.days_container {
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+}
+
+.day_box {
+
+}

@@ -1,0 +1,30 @@
+
+html {
+    font-family: 'Battambang', cursive;
+    background: url("./Images/background-photo.jpg") no-repeat  center / 100% auto ;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.days_container {
+    display: flex;
+    justify-content: center;
+    margin: 3em auto;
+    width: 100%;
+}
+
+.day_box {
+    border: 1px solid black;
+    padding: 1em 0.3em;
+   
+}
+
+.day_text {
+    transform: rotate(-45deg);
+}
