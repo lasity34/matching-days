@@ -15,11 +15,21 @@ const daysOfWeek = [
 const daysInstance = matching_days();
 
 function matching_days_update() {
-    daysInstance.set_date_value(first_date_input.value, second_date_input.value)
+    daysInstance.set_date_value()
+  set_local_storage([first_date_input.value, second_date_input.value])
+  get_local_storage()
   daysTemplate();
 }
 
+function set_local_storage(input) {
+    const stored_values = input;
+    localStorage.setItem("date", JSON.stringify(stored_values))
+}
 
+function get_local_storage() {
+    const saved_local_date = JSON.parse(localStorage.getItem("date"))
+    return saved_local_date
+}
 
 function daysTemplate() {
   const template_source = document.querySelector("#days_template").innerHTML;
