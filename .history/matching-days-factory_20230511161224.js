@@ -45,8 +45,10 @@ function matching_day() {
   }
 
   function get_filter_day() {
+    console.log(date_input_value_1, date_input_value_2);
     return daysOfWeek.map((day) => {
       let selectedClass = "";
+      console.log(day, get_day_class(date_input_value_1), get_day_class(date_input_value_2));
       if (
         day === get_day_class(date_input_value_1) &&
         day === get_day_class(date_input_value_2)

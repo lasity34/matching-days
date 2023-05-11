@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const daysInstance = matching_day();
 
-  daysTemplate()
+  daysTemplate();
   function daysTemplate() {
     const template_source = document.querySelector("#days_template").innerHTML;
     const days_template = Handlebars.compile(template_source);
@@ -27,12 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     days_data_display.innerHTML = daysDataHTML;
   }
 
-  first_date_input.addEventListener("change", function () {
-    daysInstance.set_date_value_1(first_date_input.value);
-    daysTemplate();
-  });
-  second_date_input.addEventListener("change", function () {
-    daysInstance.set_date_value_2(second_date_input.value);
-    daysTemplate();
-  });
+  first_date_input.addEventListener("change", daysTemplate);
+  second_date_input.addEventListener("change", daysTemplate);
 });

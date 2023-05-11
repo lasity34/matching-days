@@ -44,36 +44,12 @@ function matching_day() {
     return dayOfWeek;
   }
 
-  function get_filter_day() {
-    return daysOfWeek.map((day) => {
-      let selectedClass = "";
-      if (
-        day === get_day_class(date_input_value_1) &&
-        day === get_day_class(date_input_value_2)
-      ) {
-        selectedClass = "same_day";
-      } else if (day ===  get_day_class(date_input_value_1)) {
-        selectedClass = "day1";
-      } else if (day === get_day_class(date_input_value_2)) {
-        selectedClass = "day2";
-      }
-  
-      return { day, selected: selectedClass };
-    })
-  }
-  
-   
-  
-
- 
-
   return {
     set_date_value_1,
     set_date_value_2,
     get_date_value_1,
     get_date_value_2,
     is_same_day,
-    get_day_class,
-    get_filter_day
+    get_day_class
   };
 }

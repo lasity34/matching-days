@@ -84,27 +84,5 @@ describe("Testing for days of the week", function() {
         assert.equal("Friday", daysInstance.get_day_class(daysInstance.get_date_value_2()))
     })
 
-    it("it should test for both values Saturday when a date on Saturday is selected", function() {
-        daysInstance.set_date_value_1("05/06/2023")
-        
-        assert.equal("Saturday", daysInstance.get_day_class(daysInstance.get_date_value_1()))
-
-        daysInstance.set_date_value_2("05/06/2023")
-        
-        assert.equal("Saturday", daysInstance.get_day_class(daysInstance.get_date_value_2()))
-    })
-
-    it("it should test for both values Sunday when a date on Sunday is selected", function() {
-        daysInstance.set_date_value_1("05/7/2023")
-        
-        assert.equal("Sunday", daysInstance.get_day_class(daysInstance.get_date_value_1()))
-
-        daysInstance.set_date_value_2("05/7/2023")
-        
-        assert.equal("Sunday", daysInstance.get_day_class(daysInstance.get_date_value_2()))
-    })
-
-
-
 
 })
