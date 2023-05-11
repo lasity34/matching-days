@@ -1,16 +1,18 @@
 const first_date_input = document.querySelector("#first_date");
 const second_date_input = document.querySelector("#second_date");
 const days_data_display = document.querySelector(".days_container");
-const change_date = document.querySelector(".input_box")
 const daysOfWeek = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const change_date = document.querySelector(".input_box")
+
+const first_value = first_date_input.value
 
 const daysInstance = matching_days();
 
@@ -40,6 +42,7 @@ function daysTemplate() {
   };
 
   const daysDataHTML = days_template(daysData);
+
   days_data_display.innerHTML = daysDataHTML;
 }
 

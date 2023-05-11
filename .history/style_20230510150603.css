@@ -43,7 +43,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 35vh;
+    height: 30vh;
     font-size: 1.2rem;
 }
 
@@ -61,14 +61,10 @@ input {
 }
 
 .day1 {
-    background-color: rgb(228, 65, 198);
+    background-color: red;
 }
 
 .day2 {
-    background-color: rgb(86, 97, 224);
-}
-
-.same_day {
-    background-color: green;
+    background-color: greenyellow;
 }
 

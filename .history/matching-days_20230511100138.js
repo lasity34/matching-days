@@ -40,6 +40,7 @@ function daysTemplate() {
   };
 
   const daysDataHTML = days_template(daysData);
+
   days_data_display.innerHTML = daysDataHTML;
 }
 
