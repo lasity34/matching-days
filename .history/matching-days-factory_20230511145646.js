@@ -35,7 +35,7 @@ function matching_day() {
   }
 
   function is_same_day() {
-    if (get_date_value_1() === get_date_value_2()) {
+    if (get_date_value_1 === get_date_value_2) {
         return true
     } else {
         return false

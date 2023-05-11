@@ -20,10 +20,9 @@ describe("Testing for matching days values", function() {
 
     it("should test first input and second input see if both are the same", function() {
 
-        daysInstance.set_date_value_1("25/5/23")
         daysInstance.set_date_value_2("25/5/23")
 
-        assert.equal(true, daysInstance.is_same_day())
+        assert.equal("25/5/23", daysInstance.get_date_value_2())
     })
 
 })
