@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   daysTemplate()
   function daysTemplate() {
-   
+    if (!first_date_input.value || !second_date_input.value) {
+      return; 
+    }
 
     const template_source = document.querySelector("#days_template").innerHTML;
     const days_template = Handlebars.compile(template_source);

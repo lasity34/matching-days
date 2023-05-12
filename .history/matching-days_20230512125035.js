@@ -1,13 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   const first_date_input = document.querySelector("#first_date");
   const second_date_input = document.querySelector("#second_date");
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
   const daysInstance = matching_day();
 
   daysTemplate()
   function daysTemplate() {
-   
-
     const template_source = document.querySelector("#days_template").innerHTML;
     const days_template = Handlebars.compile(template_source);
     const days_data_display = document.querySelector(".days_container");

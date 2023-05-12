@@ -60,11 +60,13 @@ function matching_day() {
         day && date_input_value_2 === get_day_class(date_input_value_2)
       ) {
         selectedClass = "same_day";
-      } else if (day && date_input_value_1 ===  get_day_class(date_input_value_1)) {
+      } else if (day ===  get_day_class(date_input_value_1)) {
         selectedClass = "day1";
-      } else if (day && date_input_value_2 === get_day_class(date_input_value_2)) {
+      } else if (day === get_day_class(date_input_value_2)) {
         selectedClass = "day2";
-      } 
+      } else if (day === "") {
+        selectedClass = ""
+      }
   
       return { day, selected: selectedClass };
     })

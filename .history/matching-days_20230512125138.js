@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   daysTemplate()
   function daysTemplate() {
-   
-
     const template_source = document.querySelector("#days_template").innerHTML;
     const days_template = Handlebars.compile(template_source);
     const days_data_display = document.querySelector(".days_container");
