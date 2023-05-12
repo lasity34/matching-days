@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   first_date_input.addEventListener("change", function () {
     daysInstance.set_date_value_1(first_date_input.value);
     daysTemplate();
-    console.log(daysInstance.get_filter_day())
+    console.log(get_filter_day())
   });
   second_date_input.addEventListener("change", function () {
     daysInstance.set_date_value_2(second_date_input.value);

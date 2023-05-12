@@ -37,14 +37,6 @@ function matching_day() {
     }
   }
 
-  function is_same_day() {
-    if(get_day_class(date_input_value_1) === get_day_class(date_input_value_2)) {
-      return  true
-    } else {
-      return false
-    }
-  }
-
   function get_day_class(dateValue) {
     const date = new Date(dateValue);
     const dayOfWeek = daysOfWeek[date.getDay()];
@@ -82,7 +74,6 @@ function matching_day() {
     get_date_value_2,
     is_same_date,
     get_day_class,
-    get_filter_day,
-    is_same_day
+    get_filter_day
   };
 }

@@ -140,39 +140,12 @@ describe("Testing for days of the week values", function () {
 describe("Testing for days of the week that match or do not match", function () {
   const daysInstance = matching_day();
 
-  it("it should test for both dates are on the a Monday", function () {
-    daysInstance.set_date_value_1("05/08/2023");
-    daysInstance.set_date_value_2("05/15/2023");
-    daysInstance.get_day_class(daysInstance.get_date_value_1())
-    daysInstance.get_day_class(daysInstance.get_date_value_2())
-  
+  it("it should test for both dates are on monday", function () {
+    daysInstance.set_date_value_1("05/01/2023");
+    daysInstance.set_date_value_2("05/01/2023");
     assert.equal(
-      true,
-      daysInstance.is_same_day()
-    );
-  });
-
-  it("it should test for both dates are on the a Tuesday", function () {
-    daysInstance.set_date_value_1("05/09/2023");
-    daysInstance.set_date_value_2("05/16/2023");
-    daysInstance.get_day_class(daysInstance.get_date_value_1())
-    daysInstance.get_day_class(daysInstance.get_date_value_2())
-  
-    assert.equal(
-      true,
-      daysInstance.is_same_day()
-    );
-  });
-
-  it("it should test for both dates that are not on the same day", function () {
-    daysInstance.set_date_value_1("05/06/2023");
-    daysInstance.set_date_value_2("05/15/2023");
-    daysInstance.get_day_class(daysInstance.get_date_value_1())
-    daysInstance.get_day_class(daysInstance.get_date_value_2())
-  
-    assert.equal(
-      false,
-      daysInstance.is_same_day()
+      "Monday",
+      daysInstance.get_day_class(daysInstance.get_date_value_1())
     );
   });
 });

@@ -152,18 +152,6 @@ describe("Testing for days of the week that match or do not match", function () 
     );
   });
 
-  it("it should test for both dates are on the a Tuesday", function () {
-    daysInstance.set_date_value_1("05/09/2023");
-    daysInstance.set_date_value_2("05/16/2023");
-    daysInstance.get_day_class(daysInstance.get_date_value_1())
-    daysInstance.get_day_class(daysInstance.get_date_value_2())
-  
-    assert.equal(
-      true,
-      daysInstance.is_same_day()
-    );
-  });
-
   it("it should test for both dates that are not on the same day", function () {
     daysInstance.set_date_value_1("05/06/2023");
     daysInstance.set_date_value_2("05/15/2023");
