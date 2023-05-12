@@ -52,7 +52,7 @@ function matching_day() {
     return dayOfWeek;
   }
 
-function get_filter_day() {
+  function get_filter_day() {
     return daysOfWeek.map((day) => {
       let selectedClass = "";
       if (date_input_value_1 && day === get_day_class(date_input_value_1) && date_input_value_2 && day === get_day_class(date_input_value_2)) {
@@ -66,9 +66,6 @@ function get_filter_day() {
       return { day, selected: selectedClass };
     })
   }
-
-
-
 
   
    
